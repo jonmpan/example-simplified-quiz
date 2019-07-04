@@ -1,8 +1,9 @@
 ## To do:
 
-- [ ] Find quiz by tag
-- [ ] Select quiz by NL tag utterance
-- [ ] More training
-- [ ] Check string generation functions
+- [x] Find quiz by tag
+- [x] Select quiz by NL tag utterance
+- [x] More training
 - [ ] Test more for bugs
-- [ ] Error handling (noResult dialogs, etc)
+- [x] Error handling (noResult dialogs, etc)
+- [ ] Make a real readme
+- [ ] Update readme
