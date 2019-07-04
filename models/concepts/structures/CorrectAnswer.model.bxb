@@ -1,0 +1,18 @@
+structure (CorrectAnswer) {
+  description (__DESCRIPTION__)
+  property (text) {
+    type (viv.core.Text)
+    min (Required) max (Many)
+    visibility (Private)  
+  }
+  property (acceptedAnswers) {
+    type (viv.core.Text)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+  property (explanation) {
+    type (viv.core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+}

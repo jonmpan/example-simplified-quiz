@@ -1,0 +1,26 @@
+action (StartQuiz) {
+  description (Keep prompting the user for answers until quiz is completed.)
+  type (Calculation)
+  collect {
+    input (quiz) {
+      type (Quiz)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: FindQuiz
+        }
+      }
+      validate {
+        if (!quiz.completed) {
+          replan {
+            intent {
+              goal: UpdateQuiz
+              value { $expr(quiz) }
+            }
+          }
+        }
+      }
+    }
+  }
+  output (Quiz)
+}

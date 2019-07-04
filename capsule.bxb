@@ -1,0 +1,21 @@
+capsule {
+  id (playground.simplified_quiz)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  capsule-imports {
+    import (viv.core) { 
+      as (core) 
+    }
+    import (viv.image) {
+      as (image) version (2.12.5)
+    }
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+}
