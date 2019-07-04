@@ -1,0 +1,5 @@
+train (t-xg0d7hrml66aizhdw9wnfoa1m) {
+  utterance ("[g:StartQuiz] the (funny)[v:SearchTerm] quiz")
+  plan (Y2BlkC/ISaxML8ovzUvRK87MLcjJTMtMTYkvLM2s0gsEEgwqeBQElyQWlYBVETRGGY8Ct8y8FLAiVXx2pSYWJWeEpBblMrAwMDIwMTADaQYoixHMAgEmIA0UBwA=)
+  last-modified (1562218750540)
+}

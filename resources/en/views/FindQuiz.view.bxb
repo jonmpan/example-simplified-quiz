@@ -4,8 +4,9 @@ input-view {
   }
 
   message{
-    template (Please select a quiz.){
-      speech (Please select a quiz.)
+    choose (Random){
+      template (Please select a quiz.)
+      template (Which quiz would you like to take?)
     }
   }
   render {

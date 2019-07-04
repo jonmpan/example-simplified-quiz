@@ -1,6 +1,5 @@
 structure (Quiz) {
   description (A whole Quiz structure)
-
   property (title) {
     type (viv.core.Text)
     min (Required) max (One)
