@@ -1,6 +1,6 @@
 action (UpdateQuiz) {
   type (Search)
-  description (__DESCRIPTION__)
+  description (Compares the user's answer to the correct answer and updates your score and move to the next question)
   collect {
     input (answer) {
       type (Answer)

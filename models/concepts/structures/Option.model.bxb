@@ -1,5 +1,5 @@
 structure (Option) {
-  description("An option presented to the user for a multi choice question")
+  description(An option presented to the user for a multi choice question)
   property (text) {
     description ("Text description of the option")
     type (Answer)

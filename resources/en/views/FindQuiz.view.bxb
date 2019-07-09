@@ -5,8 +5,8 @@ input-view {
 
   message{
     choose (Random){
-      template (Please select a quiz.)
       template (Which quiz would you like to take?)
+      template ("Which of these #{size(quizzes)} #{concept(quizzes)} would you like to take?")
     }
   }
   render {

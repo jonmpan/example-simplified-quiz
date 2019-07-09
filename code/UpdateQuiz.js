@@ -21,7 +21,7 @@ module.exports.function = function updateQuiz (quiz, answer) {
   }
   if(quiz.index < quiz.questions.length - 1){
     quiz.textToDisplay += " " + quiz.questions[i+1].text;
-    quiz.textToSpeak += " " + quiz.questions[i+1].text;
+    quiz.textToSpeak += " " + buildQuestionToSpeak(quiz.questions[i+1]);
     quiz.index++;
   } else {
     quiz.textToDisplay += " You got " +quiz.score+ " out of " +quiz.questions.length+ " right!";

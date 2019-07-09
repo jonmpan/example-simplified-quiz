@@ -100,7 +100,6 @@ function buildQuizzes(searchTerm){
   if (searchTerm) {
     quizzes = findItems(quizzes, searchTerm)
   }
-  console.log(quizzes);
   var formattedQuizzes = [];
   //read the questions in the quiz and initialize the state
   for (var i=0; i<quizzes.length; i++) {
