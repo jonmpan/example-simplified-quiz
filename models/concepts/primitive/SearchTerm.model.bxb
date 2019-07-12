@@ -1,3 +1,0 @@
-text (SearchTerm) {
-  description (User searching for a quiz with this term)
-}

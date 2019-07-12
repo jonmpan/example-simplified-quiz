@@ -1,15 +1,16 @@
 action (UpdateQuiz) {
-  type (Search)
-  description (Compares the user's answer to the correct answer and updates your score and move to the next question)
+  description (Evaluate user's answer and updates the quiz state.)
+  type (UpdateTransaction)
   collect {
+    input (state) {
+      type (State)
+      min (Required) max (One)
+    }
     input (answer) {
       type (Answer)
       min (Required) max (One)
     }
-    input (quiz) {
-      type (Quiz)
-      min (Required) max (One)
-    }
-  }
-  output (Quiz)
+  }  
+  
+  output (State)
 }
