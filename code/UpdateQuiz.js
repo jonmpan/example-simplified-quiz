@@ -5,7 +5,7 @@ module.exports.function = function updateQuiz (quiz, answer) {
   const correctAnswers = quiz.questions[i].correctAnswer.acceptedAnswers;
   quiz.questions[i].answer = answer;
   var correct = false;
-  correctAnswers.map(o=>{
+  correctAnswers.forEach(o=>{
     if(o.toLowerCase() == answer.toLowerCase()){
       correct = true;
     }
