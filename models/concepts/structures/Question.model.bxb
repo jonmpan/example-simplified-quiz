@@ -2,7 +2,7 @@ structure (Question) {
   description (A question in a quiz)
   property (text) {
     description(Question to be displayed)
-    type (viv.core.Text)
+    type (core.Text)
     min (Required) max (One)
     visibility (Private)
   }
@@ -20,7 +20,7 @@ structure (Question) {
   }
   property (correct) {
     description (Whether the user got this right or not)
-    type (viv.core.Boolean)
+    type (core.Boolean)
     min (Optional) max (One)
     visibility (Private)
   }

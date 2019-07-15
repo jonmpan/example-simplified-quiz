@@ -98,7 +98,10 @@ function buildAcceptedAnswers(answer, options) {
 function buildQuizzes(searchTerm){
   var quizzes = require("../data/quizzes");
   if (searchTerm) {
-    quizzes = findItems(quizzes, searchTerm)
+    const foundQuiz = findItems(quizzes, searchTerm)
+    if(foundQuiz.length > 0){
+      quizzes = foundQuiz;
+    }
   }
   var formattedQuizzes = [];
   //read the questions in the quiz and initialize the state

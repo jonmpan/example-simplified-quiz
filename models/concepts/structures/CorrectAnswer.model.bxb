@@ -2,19 +2,19 @@ structure (CorrectAnswer) {
   description (A structure to hold information on the correct answer)
   property (text) {
     description (The correct answer)
-    type (viv.core.Text)
+    type (core.Text)
     min (Required) max (Many)
     visibility (Private)  
   }
   property (acceptedAnswers) {
     description (additional acceptable answers)
-    type (viv.core.Text)
+    type (core.Text)
     min (Optional) max (Many)
     visibility (Private)
   }
   property (explanation) {
     description (a description of why this is the correct answer)
-    type (viv.core.Text)
+    type (core.Text)
     min (Optional) max (One)
     visibility (Private)
   }

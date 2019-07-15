@@ -6,18 +6,18 @@ module.exports.function = function updateQuiz (quiz, answer) {
   quiz.questions[i].answer = answer;
   var correct = false;
   correctAnswers.map(o=>{
-    if(o.toString().toLowerCase() == answer.toString().toLowerCase()){
-      correct = true
+    if(o.toLowerCase() == answer.toLowerCase()){
+      correct = true;
     }
   })
   if(correct){
     quiz.questions[quiz.index].correct = true;
-    quiz.textToDisplay = "Correct."
-    quiz.textToSpeak = "Correct.";
+    quiz.textToDisplay = "Correct.";
+    quiz.textToSpeak = quiz.textToDisplay;
     quiz.score++;
   } else {
     quiz.textToDisplay = "Incorrect. The correct answer is " + quiz.questions[i].correctAnswer.text + ".";
-    quiz.textToSpeak = "Incorrect. The correct answer is " + quiz.questions[i].correctAnswer.text + ".";
+    quiz.textToSpeak = quiz.textToDisplay;
   }
   if(quiz.index < quiz.questions.length - 1){
     quiz.textToDisplay += " " + quiz.questions[i+1].text;
@@ -25,7 +25,7 @@ module.exports.function = function updateQuiz (quiz, answer) {
     quiz.index++;
   } else {
     quiz.textToDisplay += " You got " +quiz.score+ " out of " +quiz.questions.length+ " right!";
-    quiz.textToSpeak += " You got " +quiz.score+ " out of " +quiz.questions.length+ " right!";
+    quiz.textToSpeak = quiz.textToDisplay;
     quiz.completed = true;
   }
   return quiz;
