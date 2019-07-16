@@ -12,7 +12,7 @@
 
 ### How the Capsule Works
 
-A quiz is located by name or keyword using the FindQuiz action. The StartQuiz action is the heart of the Quiz capsule:
+A quiz is located by name or keyword using the FindQuiz action. The StartQuiz action is the heart of the Quiz capsule:...
 
 ```
 action (StartQuiz) {
